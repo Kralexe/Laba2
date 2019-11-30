@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="WpfLABA.Views.FullView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfLABA.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="{Binding Background.Color}">
+        <DockPanel LastChildFill="false">
+            <StackPanel Width="Auto" DockPanel.Dock="Top">
+                <TextBlock Text="Введите БДУ"/>
+                <TextBox Text="{Binding FullView.NameOfThreat, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}"/>
+                <TextBlock Text="Описание угрозы" Foreground="#F00"/>
+                <TextBlock Text="{Binding FullView.Description}"/>
+                <TextBlock Text="Источник угрозы" Foreground="#F00"/>
+                <TextBlock Text="{Binding FullView.Source}"/>
+                <TextBlock Text="Вектор атаки" Foreground="#F00"/>
+                <TextBlock Text="{Binding FullView.Vector}"/>
+            </StackPanel>
+        </DockPanel>
+    </Grid>
+</UserControl>
