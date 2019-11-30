@@ -12,11 +12,11 @@
                 <TextBlock Text="Введите БДУ"/>
                 <TextBox Text="{Binding FullView.NameOfThreat, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}"/>
                 <TextBlock Text="Описание угрозы" Foreground="#F00"/>
-                <TextBlock Text="{Binding FullView.Description}"/>
+                <TextBlock TextWrapping="Wrap" Text="{Binding FullView.Description}"/>
                 <TextBlock Text="Источник угрозы" Foreground="#F00"/>
-                <TextBlock Text="{Binding FullView.Source}"/>
+                <TextBlock TextWrapping="Wrap" Text="{Binding FullView.Source}"/>
                 <TextBlock Text="Вектор атаки" Foreground="#F00"/>
-                <TextBlock Text="{Binding FullView.Vector}"/>
+                <TextBlock TextWrapping="Wrap" Text="{Binding FullView.Vector}"/>
             </StackPanel>
         </DockPanel>
     </Grid>
