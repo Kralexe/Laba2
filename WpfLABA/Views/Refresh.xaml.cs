@@ -70,6 +70,7 @@ namespace WpfLABA.Views
                         }
                     }
                 }
+                Application.Current.Properties["List"] = lili;
             }
         }
     }
