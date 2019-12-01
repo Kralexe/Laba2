@@ -51,8 +51,6 @@ namespace WpfLABA
         }
         private void Save_Clicked(object sender, RoutedEventArgs e)
         {
-            WebClient client = new WebClient();
-            String url = "https://bdu.fstec.ru/documents/files/thrlist.xlsx";
             SaveFileDialog saveFileDialog = new SaveFileDialog();
             saveFileDialog.Filter = "(*.xlsx)|*.xlsx";
             if (saveFileDialog.ShowDialog() == true)
