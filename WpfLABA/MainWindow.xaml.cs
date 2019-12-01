@@ -56,7 +56,7 @@ namespace WpfLABA
             SaveFileDialog saveFileDialog = new SaveFileDialog();
             saveFileDialog.Filter = "(*.xlsx)|*.xlsx";
             if (saveFileDialog.ShowDialog() == true)
-                client.DownloadFile(url, saveFileDialog.FileName);
+                File.Copy(System.IO.Path.GetTempPath() + "thrlist.xlsx", saveFileDialog.FileName);
         }
 
     }
