@@ -25,6 +25,7 @@ namespace WpfLABA.Views
         public Refresh()
         {
             InitializeComponent();
+            AppState.Download("thrliste.xlsx");
             List<Threats> li = (List<Threats>)Application.Current.Properties["List"];
             List<Threats> lili = AppState.Convert("thrliste.xlsx");
             int count = 0;
